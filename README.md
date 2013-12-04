@@ -1,7 +1,7 @@
 Gifts With Friends
 ============
 
-Set up a "Secret Santa" style gift exchange between remote friends through email. When you can't draw names out of a hat, this is the next best solution. No need to enlist a third party to pick names.
+Set up a [Secret Santa](http://en.wikipedia.org/wiki/Secret_Santa)-style gift exchange between remote friends through email. When you can't draw names out of a hat, this is the next best solution. No need to enlist a third party to pick names. You can't trust them with the shopping secrets anyway.
 
 ### Table of Contents
 * [Configure](#configure)
