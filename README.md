@@ -13,7 +13,7 @@ After cloning this project, first configure `gifts_cfg.py`. This is a python mod
 
 ### <a name="run"></a>Run
 Next, run `gifts_with_friends.py` from the same directory containing `gifts_cfg.py`.
-Run this script with no arguments (`after editing gifts_cfg.py`) to start the gift exchange. The script will match up people participating in the exchange and prevent anyone from shopping for herself. Then, it will notify each individual by email with *who* he is shopping for, *when* the exchange will happen, and *how much* he can spend on a gift.
+Run this script with no arguments (*after editing* `gifts_cfg.py`) to start the gift exchange. The script will match up people participating in the exchange and prevent anyone from shopping for herself. Then, it will notify each individual by email with *who* he is shopping for, *when* the exchange will happen, and *how much* he can spend on a gift.
 
 ```bash
 cd <cloned_repository>
