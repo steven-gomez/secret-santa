@@ -16,7 +16,6 @@ def verify_no_fixed_points(list_a, list_b, debug=False):
     Iterate through lists; return whether the ith entry in list_a does not
     equal the ith entry in list_b, for all i.
     """
-    
     assert(len(list_a) == len(list_b))
     for i in range(len(list_a)):
         if list_a[i] == list_b[i]:
@@ -36,7 +35,6 @@ def send_gift_mail(to_email, shop_for, price, date, gmail_usr, gmail_pwd):
     Notify a person who his match is, what price to spend, the date. Use Google's
     mail server to send the email.
     """
-    
     text_body = "You are " + shop_for + "\'s secret santa. " + \
                 "Please get them something nice for around $"+str(price)+". " + \
                 "Gifts will be exchanged on "+date+".\n\nHo Ho Ho!"
@@ -84,7 +82,6 @@ def shuffle_and_notify(kids, gmail_usr, gmail_pwd, price, date):
     
 def main():
     """Load configuration and run shuffle_and_notify."""
-    
     kids = gifts_cfg.kids()
     price = gifts_cfg.price()
     date = gifts_cfg.date()
