@@ -2,8 +2,8 @@
 """
 gifts_with_friends.py: Match up friends randomly for secret shopping.
 """
-
 __author__ = "Steven Gomez"
+
 
 import smtplib
 from random import shuffle
@@ -78,15 +78,16 @@ def shuffle_and_notify(kids, gmail_usr, gmail_pwd, price, date):
         send_gift_mail(shopper_email, receiver_name, price, date, gmail_usr, gmail_pwd)
         print 'Email sent to ' + shopper_email
 
-    print 'All emails sent. Ho Ho Ho!'
+    print 'All emails sent. Ho Ho Ho!\n'
     
 def main():
     """Load configuration and run shuffle_and_notify."""
-    kids = gifts_cfg.kids()
-    price = gifts_cfg.price()
-    date = gifts_cfg.date()
-    gmail_usr = gifts_cfg.gmail_usr()
-    gmail_pwd = gifts_cfg.gmail_pwd()
+    kids = gifts_cfg.kids
+    price = gifts_cfg.price
+    date = gifts_cfg.date
+    gmail_usr = gifts_cfg.gmail_usr
+    gmail_pwd = gifts_cfg.gmail_pwd
+    
     shuffle_and_notify(kids, gmail_usr, gmail_pwd, price, date)
 
 if __name__ == '__main__':
